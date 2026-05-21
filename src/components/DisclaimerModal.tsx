@@ -33,7 +33,7 @@ export function DisclaimerModal({ onAccept }: DisclaimerModalProps) {
         <p className="disclaimer-body">
           Food ordered from Alpha Lounge Bar and Restaurant may contain Eggs, Milk, Fish,
           Crustaceans, Molluscs, Gluten, Tree nuts, Peanuts, Lupin, Mustard, Sesame, Soya
-          and Sulphites. Please contact the restaurant directly if you have any allergy
+          and Sulphites. Please contact any member of staff if you have any allergy
           concerns.
         </p>
 
