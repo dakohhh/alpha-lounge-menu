@@ -38,7 +38,7 @@ export function DisclaimerModal({ onAccept }: DisclaimerModalProps) {
         </p>
 
         <p className="disclaimer-warning">
-          <strong>Warning:</strong> You must be 18+ to purchase alcohol on this website.
+          <strong>Warning:</strong> You must be 18+ to purchase alcohol at the restaurant.
         </p>
 
         <button type="button" className="disclaimer-btn" onClick={onAccept}>
