@@ -3,6 +3,7 @@ import { ALPHA_MENU } from "./data/menu";
 import { CategoryNav } from "./components/CategoryNav";
 import { Hero } from "./components/Hero";
 import { MenuSection } from "./components/MenuSection";
+import { DisclaimerModal } from "./components/DisclaimerModal";
 import { Visit } from "./components/Visit";
 import { applyTheme } from "./theme/applyTheme";
 import { CURRENCY, DENSITY, MENU_COLUMNS, SHOW_ORNAMENTS } from "./theme/config";
@@ -13,6 +14,8 @@ const palette = PALETTES.midnight;
 const type = TYPE_PAIRS.cormorant;
 
 export default function App() {
+  const [disclaimerAccepted, setDisclaimerAccepted] = useState(false);
+
   useEffect(() => {
     applyTheme(palette, type);
     document.body.dataset.density = DENSITY;
@@ -48,6 +51,10 @@ export default function App() {
   }, []);
 
   const activeSection = ALPHA_MENU.find((s) => s.id === active);
+
+  if (!disclaimerAccepted) {
+    return <DisclaimerModal onAccept={() => setDisclaimerAccepted(true)} />;
+  }
 
   return (
     <div className="page">

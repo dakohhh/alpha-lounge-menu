@@ -1,0 +1,98 @@
+.disclaimer-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: max(20px, env(safe-area-inset-top)) max(20px, env(safe-area-inset-right))
+    max(20px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left));
+  /* Solid overlay — backdrop-filter blurs the whole page and is very slow on mobile */
+  background: var(--c-bg);
+}
+
+.disclaimer-panel {
+  width: min(520px, 100%);
+  max-height: min(90vh, 640px);
+  overflow-y: auto;
+  padding: clamp(28px, 5vw, 40px);
+  border: 1px solid var(--c-lineStrong);
+  background: var(--c-bg2);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.45);
+  text-align: center;
+}
+
+.disclaimer-title {
+  margin: 0 0 16px;
+  font-family: var(--font-display);
+  font-weight: var(--display-weight);
+  font-size: clamp(22px, 4vw, 28px);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--c-accent);
+}
+
+.disclaimer-body {
+  margin: 0 0 20px;
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--c-inkMute);
+  text-wrap: pretty;
+}
+
+.disclaimer-warning {
+  margin: 0 0 28px;
+  padding: 14px 16px;
+  border: 1px solid color-mix(in oklab, var(--c-deep) 50%, var(--c-line));
+  background: color-mix(in oklab, var(--c-deep) 18%, var(--c-bg));
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--c-ink);
+  text-wrap: pretty;
+}
+
+.disclaimer-warning strong {
+  color: var(--c-accentSoft);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.disclaimer-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  min-width: 200px;
+  padding: 14px 32px;
+  border: 1px solid var(--c-accent);
+  border-radius: 999px;
+  background: var(--c-accent);
+  color: var(--c-bg);
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.disclaimer-btn:hover {
+  background: transparent;
+  color: var(--c-accent);
+}
+
+.disclaimer-btn:focus-visible {
+  outline: 2px solid var(--c-accentSoft);
+  outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+  .disclaimer-panel {
+    padding: 24px 20px;
+  }
+
+  .disclaimer-btn {
+    width: 100%;
+    min-width: 0;
+  }
+}
