@@ -830,11 +830,11 @@
         { "ref": null, "name": "Coke / Diet Coke / 7 UP", "description": null, "tags": ["non_alcoholic"], "prices": [{ "label": "standard", "amount": 3.00 }] },
         { "ref": null, "name": "Juices (Apple/Orange/Pineapple/Mango/Cranberry)", "description": "Sold by the glass", "tags": ["non_alcoholic"], "prices": [{ "label": "glass", "amount": 5.00 }] },
         { "ref": null, "name": "Red Bull", "description": null, "tags": ["non_alcoholic"], "prices": [{ "label": "standard", "amount": 5.00 }] },
-        { "ref": null, "name": "Nigerian Fanta", "description": null, "tags": ["non_alcoholic"], "prices": [{ "label": "standard", "amount": 3.00 }] },
+        { "ref": null, "name": "Nigerian Fanta", "description": null, "tags": ["non_alcoholic"], "prices": [{ "label": "standard", "amount": 5.00 }] },
         { "ref": null, "name": "Nigerian Schweppes", "description": null, "tags": ["non_alcoholic"], "prices": [{ "label": "standard", "amount": 3.00 }] },
-        { "ref": null, "name": "Super Malt", "description": null, "tags": ["non_alcoholic"], "prices": [{ "label": "standard", "amount": 3.00 }] },
+        { "ref": null, "name": "Super Malt", "description": null, "tags": ["non_alcoholic"], "prices": [{ "label": "standard", "amount": 5.00 }] },
         { "ref": null, "name": "Guinness Malta", "description": null, "tags": ["non_alcoholic"], "prices": [{ "label": "standard", "amount": 3.00 }] },
-        { "ref": null, "name": "Tonic Water", "description": null, "tags": ["non_alcoholic"], "prices": [{ "label": "standard", "amount": 2.00 }] },
+        { "ref": null, "name": "Tonic Water", "description": null, "tags": ["non_alcoholic"], "prices": [{ "label": "standard", "amount": 3.00 }] },
         { "ref": null, "name": "Juice (Pack 1lt)", "description": null, "tags": ["non_alcoholic"], "prices": [{ "label": "standard", "amount": 10.00 }] }
       ]
     }
