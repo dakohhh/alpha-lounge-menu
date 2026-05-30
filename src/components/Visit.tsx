@@ -57,6 +57,53 @@ export function Visit() {
         </div>
       </div>
 
+      <div className="visit-social">
+        <span className="visit-social-label">Follow us</span>
+        <div className="visit-social-links">
+          <a
+            href="https://www.instagram.com/alphaloungebar"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Alpha Lounge on Instagram"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+              <rect
+                x="3"
+                y="3"
+                width="18"
+                height="18"
+                rx="5"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.6"
+              />
+              <circle
+                cx="12"
+                cy="12"
+                r="4"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.6"
+              />
+              <circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" />
+            </svg>
+          </a>
+          <a
+            href="https://www.tiktok.com/@alphaloungebar"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Alpha Lounge on TikTok"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M14 3.5c.3 2 1.6 3.7 3.9 4v2.5c-1.4 0-2.8-.4-3.9-1.2v5.6a4.9 4.9 0 1 1-4.9-4.9c.3 0 .6 0 .9.1v2.6a2.4 2.4 0 1 0 1.7 2.3V3.5H14z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
       <div className="footer-mark">
         <span className="fm-line" />
         <span className="fm-script">Alpha</span>

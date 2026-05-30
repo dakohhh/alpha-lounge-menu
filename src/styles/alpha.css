@@ -619,6 +619,40 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
 .visit-dl dd a { color: var(--c-ink); border-bottom: 1px solid transparent; transition: border-color .15s ease, color .15s ease; }
 .visit-dl dd a:hover { color: var(--c-accent); border-bottom-color: var(--c-accent); }
 
+.visit-social {
+  position: relative;
+  margin: clamp(48px, 7vw, 80px) auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+.visit-social-label {
+  font-size: 11px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--c-accent);
+}
+.visit-social-links {
+  display: flex;
+  gap: 14px;
+}
+.visit-social-links a {
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--c-lineStrong);
+  border-radius: 999px;
+  color: var(--c-ink);
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+.visit-social-links a:hover {
+  color: var(--c-bg);
+  background: var(--c-accent);
+  border-color: var(--c-accent);
+}
+
 .footer-mark {
   margin: clamp(60px, 8vw, 100px) auto 24px;
   max-width: 500px;
