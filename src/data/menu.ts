@@ -1,185 +1,114 @@
+import rawMenu from "../../alpha_restaurant_menu.json";
 import type { MenuSectionData } from "../types/menu";
 
-/** Alpha Lounge menu data — extracted from the pasted menu */
-export const ALPHA_MENU: MenuSectionData[] = [
-  {
-    id: "soups",
-    title: "Soups & Nigerian Dishes",
-    navLabel: "Soups",
-    kicker: "From the homeland",
-    note: "All soups served with your choice of swallow — pounded yam, eba, amala or fufu (one portion included).",
-    items: [
-      { name: "Egusi with Fish and Garri", price: 15 },
-      { name: "Banga Soup", variant: "with meat", price: 16 },
-      { name: "Banga Soup", variant: "with fish", price: 16 },
-      { name: "Abula", variant: "with meat", price: 15 },
-      { name: "Abula", variant: "with fish", price: 15 },
-      { name: "Ofe Nsala", variant: "assorted meat", price: 15 },
-      { name: "Ofe Nsala", variant: "with fish", price: 15 },
-      { name: "Ofe Owerri", variant: "assorted meat", price: 20, badge: "Chef's pick" },
-      { name: "Ofe Owerri", variant: "with fish", price: 20 },
-      { name: "Bitterleaf Soup", variant: "assorted meat", price: 15 },
-      { name: "Bitterleaf Soup", variant: "with fish", price: 15 },
-      { name: "Oha Soup", variant: "assorted meat", price: 15 },
-      { name: "Oha Soup", variant: "with fish", price: 15 },
-      { name: "Ogbono Soup", variant: "assorted meat", price: 12 },
-      { name: "Ogbono Soup", variant: "with fish", price: 15 },
-      { name: "Afang Soup", variant: "assorted meat", price: 15 },
-      { name: "Afang Soup", variant: "with fish", price: 15 },
-      { name: "Edikang Ikong", variant: "assorted meat", price: 15 },
-      { name: "Edikang Ikong", variant: "with fish", price: 15 },
-      { name: "Egusi Soup", variant: "assorted meat", price: 15 },
-      { name: "Egusi Soup with Pounded Yam", variant: "with fish", price: 15 },
-      { name: "Okra (Igbo)", variant: "assorted meat", price: 15 },
-      { name: "Okra (Igbo)", variant: "with fish", price: 15 },
-      { name: "Efo Riro", variant: "assorted meat", price: 12 },
-      { name: "Efo Riro", variant: "with fish", price: 15 },
-      { name: "Chef Special Okra", price: 20, badge: "Signature" },
-      { name: "Sea Food Okra", price: 25, badge: "Signature" },
-    ],
+interface RawPrice {
+  label: string;
+  amount: number;
+}
+
+interface RawItem {
+  ref?: number | null;
+  name: string;
+  description?: string | null;
+  tags?: string[];
+  prices: RawPrice[];
+}
+
+interface RawSection {
+  id: string;
+  name: string;
+  category?: string;
+  note?: string | null;
+  serving_options?: unknown;
+  price_labels?: string[];
+  items: RawItem[];
+}
+
+interface RawMenu {
+  restaurant: string;
+  currency: string;
+  currency_symbol: string;
+  sections: RawSection[];
+}
+
+const data = rawMenu as RawMenu;
+
+/** Display title, short nav label, and script kicker per section id. */
+const SECTION_META: Record<string, { title: string; navLabel: string; kicker: string }> = {
+  starters: { title: "Starters", navLabel: "Starters", kicker: "To begin" },
+  alpha_speciality_dishes: {
+    title: "Alpha Speciality Dishes",
+    navLabel: "Speciality",
+    kicker: "House specialities",
   },
-  {
-    id: "starters",
-    title: "Starters & Small Plates",
-    navLabel: "Starters",
-    kicker: "To begin",
-    items: [
-      { name: "Garnished King Prawns", price: 18 },
-      { name: "Snails", variant: "served with sauce", price: 20 },
-      { name: "Alpha Classic Fish — Tilapia", price: 20, badge: "House" },
-      { name: "Alpha Great Fish — Croaker", price: 20, badge: "House" },
-      { name: "Hot Wings", variant: "10 pcs", price: 10 },
-      { name: "Chicken Suya", price: 10 },
-      { name: "Garnished Goat Meat", price: 20 },
-    ],
+  main_dishes: { title: "Main Dishes", navLabel: "Mains", kicker: "The full plate" },
+  african_soup: { title: "African Soup", navLabel: "Soups", kicker: "From the homeland" },
+  alpha_finger_dips: {
+    title: "Alpha Finger Dips",
+    navLabel: "Finger Dips",
+    kicker: "Light bites",
   },
-  {
-    id: "mains",
-    title: "Main Dishes",
-    kicker: "The full plate",
-    items: [
-      { name: "Jerk Chicken", variant: "with chip or fried yam", price: 12 },
-      { name: "Fish with Plantain", price: 10 },
-      { name: "Suya Burger", variant: "with chips", price: 8 },
-      { name: "Beef Burger", variant: "with chips", price: 8 },
-      { name: "Hot Dogs", variant: "fried yam or chips", price: 10 },
-      { name: "Spare Ribs", variant: "fried yam or chips", price: 12 },
-      { name: "Fried Bream Fish", variant: "plain", price: 8 },
-      { name: "Fried Bream Fish", variant: "with rice", price: 11 },
-      { name: "Jerk Chicken", variant: "plain", price: 5 },
-      { name: "Jerk Chicken", variant: "with rice", price: 12 },
-      { name: "Chicken Stew", variant: "plain", price: 7 },
-      { name: "Chicken Stew", variant: "with rice", price: 10 },
-      { name: "Curry Goat", variant: "plain", price: 7 },
-      { name: "Curry Goat", variant: "with rice", price: 12 },
-      { name: "Fresh Fish Stew", variant: "plain", price: 10 },
-      { name: "Fresh Fish Stew", variant: "with rice", price: 15 },
-      { name: "Ayamase / Hot Peppersoup", variant: "plain", price: 10 },
-      { name: "Ayamase / Hot Peppersoup", variant: "with rice", price: 15 },
-      { name: "African Beef Stew", variant: "plain", price: 7 },
-      { name: "African Beef Stew", variant: "with rice", price: 12 },
-      { name: "Assorted Meat Stew", variant: "plain", price: 7 },
-      { name: "Assorted Meat Stew", variant: "with rice", price: 12 },
-      { name: "Yam Pottage with Beef", price: 15 },
-      { name: "Yam Pottage", price: 10 },
-      { name: "Honey Beans", price: 10 },
-    ],
+  side_dishes: { title: "Side Dishes", navLabel: "Sides", kicker: "Add a little more" },
+  salads: { title: "Salads", navLabel: "Salads", kicker: "Fresh & cold" },
+  rice: { title: "Rice", navLabel: "Rice", kicker: "Grains & pairings" },
+  extras: { title: "Extras", navLabel: "Extras", kicker: "A little extra" },
+  desserts: { title: "Desserts", navLabel: "Desserts", kicker: "A sweet finish" },
+  champagne_sparkling: {
+    title: "Champagne & Sparkling",
+    navLabel: "Champagne",
+    kicker: "Pop the cork",
   },
-  {
-    id: "special",
-    title: "Special Dishes",
-    kicker: "House specialties",
-    items: [
-      { name: "Alpha Mix Platter", price: 20, badge: "Signature" },
-      { name: "Pepper Chicken", price: 10 },
-      { name: "Suya", variant: "Nigerian", price: 12 },
-      { name: "Tilapia Fish Pepper Soup", price: 20 },
-      { name: "Catfish Pepper Soup", price: 20 },
-      { name: "Asun", variant: "spicy goat-meat", price: 12 },
-      { name: "Pepper Soup", variant: "mixed meat", price: 12 },
-      { name: "Nkwobi", price: 12 },
-      { name: "Stock Fish & Ugba", price: 15 },
-      { name: "Isi-Ewu", variant: "well-spiced with African herbs", price: 20, badge: "Signature" },
-      { name: "Hot & Spicy Gizzard Dodo", price: 12 },
-      { name: "Hot & Spicy Gizzard", price: 10 },
-    ],
-  },
-  {
-    id: "rice",
-    title: "Rice Dishes",
-    kicker: "Grains & pairings",
-    items: [
-      { name: "Fried Rice", variant: "plain", price: 7 },
-      { name: "Fried Rice + 2 Beef", price: 12 },
-      { name: "Fried Rice + 1 Chicken", price: 12 },
-      { name: "Jollof Rice", variant: "plain", price: 7 },
-      { name: "Jollof Rice + 1 Chicken", price: 12 },
-      { name: "Jollof Rice + 2 Beef", price: 12 },
-      { name: "Rice and Peas", variant: "plain", price: 5 },
-      { name: "Rice & Peas + 1 Chicken", price: 10 },
-      { name: "Rice & Peas + 2 Beef", price: 10 },
-      { name: "Plain Boiled Rice", price: 5 },
-      { name: "Fried Bream Fish", variant: "1 pc", price: 8 },
-      { name: "Jerk Chicken", variant: "1 pc, quarter", price: 5 },
-    ],
-  },
-  {
-    id: "sides",
-    title: "Sides & Extras",
-    kicker: "Add a little more",
-    items: [
-      { name: "Fried Yam", price: 5 },
-      { name: "Fried Plantain", price: 5 },
-      { name: "Boiled Yam", variant: "4 pcs", price: 5 },
-      { name: "Mixed Salad", price: 5 },
-      { name: "Coleslaw", price: 5 },
-      { name: "Moi Moi", price: 5 },
-      { name: "Extra Wheat", price: 5 },
-      { name: "Extra Amala", price: 5 },
-      { name: "Extra Garri", price: 5 },
-      { name: "Extra Pounded Yam", price: 5 },
-      { name: "Plain Stew", price: 5 },
-      { name: "Assorted Meat", variant: "3 pcs", price: 5 },
-      { name: "Stock Fish", price: 10 },
-    ],
-  },
-  {
-    id: "desserts",
-    title: "Desserts",
-    kicker: "A sweet finish",
-    items: [
-      { name: "Puff Puff", price: 5 },
-      { name: "Ice Cream", price: 3 },
-      { name: "Chocolate Cake", price: 3 },
-      { name: "Carrot Passion Cake", price: 3 },
-    ],
-  },
-  {
-    id: "bar",
-    title: "At the Bar",
-    kicker: "Cocktails, wines, beers & spirits",
-    note: "Ask your server for the full bar list — vintages and pours vary nightly.",
-    items: [
-      { name: "Signature Cocktails", variant: "house-shaken", price: "from 9" },
-      { name: "Classic Cocktails", variant: "Old Fashioned, Negroni, Espresso Martini…", price: "from 9" },
-      { name: "Champagne & Sparkling", variant: "by the glass / bottle", price: "ask" },
-      { name: "Red, White & Rosé Wines", variant: "by the glass / bottle", price: "from 6" },
-      { name: "Star, Heineken, Guinness", variant: "draught & bottled", price: "from 5" },
-      { name: "Rémy Martin", price: 120 },
-      { name: "Hennessy", price: 120 },
-      { name: "Courvoisier", price: 90 },
-      { name: "Casamigos Gold", price: 160 },
-      { name: "Jack Daniel's", price: 90 },
-      { name: "Martell", price: 100 },
-      { name: "Casamigos Blanco", variant: "white", price: 130 },
-      { name: "LP Rosé", price: 160 },
-      { name: "Belaire", price: 100 },
-      { name: "Glenmorangie", price: 90 },
-      { name: "Glenfiddich", variant: "15 year", price: 150 },
-      { name: "Palm Wine", variant: "served chilled", price: 8 },
-      { name: "Chapman", variant: "the Lagos classic", price: 6 },
-      { name: "Zobo & Fresh Juices", variant: "non-alcoholic", price: 5 },
-      { name: "Soft Drinks, Water & Mixers", price: "from 2.5" },
-    ],
-  },
-];
+  rose_wine: { title: "Rosé Wine", navLabel: "Rosé", kicker: "By bottle or glass" },
+  white_wine: { title: "White Wine", navLabel: "White Wine", kicker: "By bottle or glass" },
+  red_wine: { title: "Red Wine", navLabel: "Red Wine", kicker: "By bottle or glass" },
+  aperitifs: { title: "Aperitifs", navLabel: "Aperitifs", kicker: "Before the meal" },
+  mocktails: { title: "Mocktails", navLabel: "Mocktails", kicker: "Zero proof" },
+  cocktails: { title: "Cocktails", navLabel: "Cocktails", kicker: "House-shaken" },
+  whisky: { title: "Whisky", navLabel: "Whisky", kicker: "Single malts & more" },
+  vodka_gin_rum: { title: "Vodka, Gin & Rum", navLabel: "Spirits", kicker: "The spirit shelf" },
+  brandy_cognac: { title: "Brandy & Cognac", navLabel: "Cognac", kicker: "Aged & smooth" },
+  port_sherry: { title: "Port & Sherry", navLabel: "Port", kicker: "Fortified" },
+  beers: { title: "Beers", navLabel: "Beers", kicker: "Draught & bottled" },
+  soft_drinks: { title: "Soft Drinks", navLabel: "Soft Drinks", kicker: "Non-alcoholic" },
+};
+
+/**
+ * Some source notes are internal annotations (e.g. "Source PDF lists…") that
+ * shouldn't be shown to guests. Override or drop (null) those here; sections
+ * not listed fall back to the source note.
+ */
+const NOTE_OVERRIDES: Record<string, string | null> = {
+  rice: "Add 1 chicken or 2 beef, or keep it plain.",
+  aperitifs: null,
+  vodka_gin_rum: "Add a mixer to any spirit for £3.",
+  port_sherry: "Served by the glass (50ml).",
+  soft_drinks: null,
+};
+
+const titleCase = (s: string) =>
+  s.toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase());
+
+export const ALPHA_MENU: MenuSectionData[] = data.sections.map((section) => {
+  const meta = SECTION_META[section.id];
+  const note =
+    section.id in NOTE_OVERRIDES
+      ? NOTE_OVERRIDES[section.id] ?? undefined
+      : section.note ?? undefined;
+
+  return {
+    id: section.id,
+    title: meta?.title ?? titleCase(section.name),
+    navLabel: meta?.navLabel ?? titleCase(section.name),
+    kicker: meta?.kicker ?? "",
+    note,
+    category: section.category,
+    items: section.items.map((it) => ({
+      name: it.name,
+      description: it.description ?? undefined,
+      tags: it.tags,
+      prices: it.prices,
+    })),
+  };
+});
+
+export const CURRENCY_SYMBOL = data.currency_symbol;

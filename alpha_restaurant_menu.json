@@ -1,0 +1,842 @@
+{
+  "restaurant": "Alpha Restaurant",
+  "currency": "GBP",
+  "currency_symbol": "£",
+  "notes": "Prices are decimal numbers in GBP. Multi-price items use a `prices` array keyed by `label`. Section-level `serving_options` describe choices that apply to every item in that section.",
+  "sections": [
+    {
+      "id": "starters",
+      "name": "STARTERS",
+      "note": null,
+      "serving_options": null,
+      "price_labels": ["standard"],
+      "items": [
+        {
+          "ref": 1,
+          "name": "Hot & Spicy Gizzard",
+          "description": "Turkey gizzards in diced spicy hot chillies, onions and chopped tomatoes",
+          "tags": ["spicy"],
+          "prices": [{ "label": "standard", "amount": 15.00 }]
+        },
+        {
+          "ref": 2,
+          "name": "Hot & Spicy Gizzard Dodo",
+          "description": "Turkey gizzards in diced spicy hot chillies, onions and chopped tomatoes",
+          "tags": ["spicy"],
+          "prices": [{ "label": "standard", "amount": 16.00 }]
+        },
+        {
+          "ref": 3,
+          "name": "Isi-Ewu",
+          "description": "Nigerian goat head cooked with African herbs & spices",
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 25.00 }]
+        },
+        {
+          "ref": 4,
+          "name": "Stock Fish & Ugba",
+          "description": "Stock fish fillet and oil bean seed in a spicy palm oil sauce with Scotch bonnet peppers and African herbs",
+          "tags": ["spicy"],
+          "prices": [{ "label": "standard", "amount": 20.00 }]
+        },
+        {
+          "ref": 5,
+          "name": "Nkwobi",
+          "description": "Nigerian cow foot delicacy in a spicy palm oil sauce with Scotch bonnet peppers and African herbs",
+          "tags": ["spicy"],
+          "prices": [{ "label": "standard", "amount": 15.00 }]
+        },
+        {
+          "ref": 6,
+          "name": "Pepper Soup (Mixed Meat)",
+          "description": "Cow foot, tripe and goat meat in a spicy hot broth with special African herbs",
+          "tags": ["spicy"],
+          "prices": [{ "label": "standard", "amount": 15.00 }]
+        },
+        {
+          "ref": 7,
+          "name": "Asun (Spicy Goat Meat)",
+          "description": null,
+          "tags": ["spicy"],
+          "prices": [{ "label": "standard", "amount": 15.00 }]
+        },
+        {
+          "ref": 8,
+          "name": "Cat Fish Pepper Soup",
+          "description": "Cat fish in a spicy hot broth with special African herbs, spices and chilli peppers",
+          "tags": ["spicy"],
+          "prices": [{ "label": "standard", "amount": 20.00 }]
+        },
+        {
+          "ref": 9,
+          "name": "Tilapia Fish Pepper Soup",
+          "description": "Tilapia fish in a spicy hot broth with special African herbs, spices and chilli peppers",
+          "tags": ["spicy"],
+          "prices": [{ "label": "standard", "amount": 20.00 }]
+        },
+        {
+          "ref": 10,
+          "name": "Suya (Nigerian)",
+          "description": "BBQ strips of meat in special African Suya spice, served with fresh sliced onions and tomatoes",
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 15.00 }]
+        },
+        {
+          "ref": 11,
+          "name": "Pepper Chicken",
+          "description": "Chilli, red, yellow and green capsicum peppers",
+          "tags": ["spicy"],
+          "prices": [{ "label": "standard", "amount": 15.00 }]
+        },
+        {
+          "ref": 12,
+          "name": "Chicken Suya",
+          "description": null,
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 15.00 }]
+        },
+        {
+          "ref": 13,
+          "name": "Garnished Goat Meat",
+          "description": null,
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 25.00 }]
+        },
+        {
+          "ref": 14,
+          "name": "Hot Wings (10 pieces)",
+          "description": null,
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 15.00 }]
+        },
+        {
+          "ref": 15,
+          "name": "Alpha Mix Platter",
+          "description": "Chicken, gizzard and goat meat",
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 35.00 }]
+        }
+      ]
+    },
+    {
+      "id": "alpha_speciality_dishes",
+      "name": "ALPHA SPECIALITY DISHES",
+      "note": null,
+      "serving_options": null,
+      "price_labels": ["standard"],
+      "items": [
+        {
+          "ref": 16,
+          "name": "Chicken Ngwongwo with Ugba",
+          "description": null,
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 15.00 }]
+        },
+        {
+          "ref": 17,
+          "name": "Alpha Great Fish Croaker",
+          "description": "Cameroon style grilled/roasted whole Croaker",
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 25.00 }]
+        },
+        {
+          "ref": 18,
+          "name": "Alpha Classic Fish Tilapia",
+          "description": "Cameroon style grilled/roasted whole Tilapia",
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 30.00 }]
+        },
+        {
+          "ref": 19,
+          "name": "Snails",
+          "description": "Served in sauce of diced spicy hot chillies and onions",
+          "tags": ["spicy"],
+          "prices": [{ "label": "standard", "amount": 25.00 }]
+        },
+        {
+          "ref": 20,
+          "name": "Garnished King Prawns",
+          "description": "Chilli, red, yellow and green capsicum peppers",
+          "tags": ["spicy"],
+          "prices": [{ "label": "standard", "amount": 25.00 }]
+        },
+        {
+          "ref": 21,
+          "name": "Spicy Goat Meat",
+          "description": "Chilli, red, yellow and green capsicum peppers",
+          "tags": ["spicy"],
+          "prices": [{ "label": "standard", "amount": 25.00 }]
+        },
+        {
+          "ref": 22,
+          "name": "Abacha and Ugba with Fried Fish",
+          "description": "Chilli, red, yellow and green capsicum peppers",
+          "tags": ["spicy"],
+          "prices": [{ "label": "standard", "amount": 20.00 }]
+        },
+        {
+          "ref": 23,
+          "name": "Spicy Kpomo",
+          "description": "Chilli, red, yellow and green capsicum peppers",
+          "tags": ["spicy"],
+          "prices": [{ "label": "standard", "amount": 15.00 }]
+        }
+      ]
+    },
+    {
+      "id": "main_dishes",
+      "name": "MAIN DISHES",
+      "note": "All served with a rice dish of your choice (Jollof Rice, Rice & Peas or Plain Boiled Rice)",
+      "serving_options": {
+        "type": "single_choice",
+        "label": "Rice",
+        "applies_to": "With Rice",
+        "options": ["Jollof Rice", "Rice & Peas", "Plain Boiled Rice"]
+      },
+      "price_labels": ["With Rice", "No Rice"],
+      "items": [
+        {
+          "ref": 24,
+          "name": "Assorted Meat Stew",
+          "description": "Cuts of beef, offal and mutton in a mild sauce of tomatoes, onions and sweet red capsicum peppers",
+          "tags": [],
+          "prices": [
+            { "label": "With Rice", "amount": 15.00 },
+            { "label": "No Rice", "amount": 10.00 }
+          ]
+        },
+        {
+          "ref": 25,
+          "name": "African Beef Stew",
+          "description": "Tender cubed beef in a mild sauce of tomatoes, onions and sweet red capsicum peppers",
+          "tags": [],
+          "prices": [
+            { "label": "With Rice", "amount": 15.00 },
+            { "label": "No Rice", "amount": 10.00 }
+          ]
+        },
+        {
+          "ref": 26,
+          "name": "Aymase (Very Hot Pepper Sauce)",
+          "description": null,
+          "tags": ["spicy"],
+          "prices": [
+            { "label": "With Rice", "amount": 15.00 },
+            { "label": "No Rice", "amount": 10.00 }
+          ]
+        },
+        {
+          "ref": 27,
+          "name": "Fresh Fish Stew",
+          "description": "Fish in a mild sauce of tomatoes, onions and sweet red capsicum peppers",
+          "tags": [],
+          "prices": [
+            { "label": "With Rice", "amount": 15.00 },
+            { "label": "No Rice", "amount": 10.00 }
+          ]
+        },
+        {
+          "ref": 28,
+          "name": "Curry Goat",
+          "description": null,
+          "tags": [],
+          "prices": [
+            { "label": "With Rice", "amount": 15.00 },
+            { "label": "No Rice", "amount": 10.00 }
+          ]
+        },
+        {
+          "ref": 29,
+          "name": "Chicken Stew",
+          "description": null,
+          "tags": [],
+          "prices": [
+            { "label": "With Rice", "amount": 15.00 },
+            { "label": "No Rice", "amount": 8.00 }
+          ]
+        },
+        {
+          "ref": 30,
+          "name": "Jerk Chicken (1/4)",
+          "description": null,
+          "tags": [],
+          "prices": [
+            { "label": "With Rice", "amount": 15.00 },
+            { "label": "No Rice", "amount": 8.00 }
+          ]
+        },
+        {
+          "ref": 31,
+          "name": "Fried Bream Fish",
+          "description": null,
+          "tags": [],
+          "prices": [
+            { "label": "With Rice", "amount": 15.00 },
+            { "label": "No Rice", "amount": 10.00 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "african_soup",
+      "name": "AFRICAN SOUP",
+      "note": "All served with your choice of Garri, Pounded Yam, Amala or Wheat",
+      "serving_options": {
+        "type": "single_choice",
+        "label": "Swallow",
+        "applies_to": "all",
+        "options": ["Garri", "Pounded Yam", "Amala", "Wheat"]
+      },
+      "price_labels": ["standard"],
+      "items": [
+        {
+          "ref": 32,
+          "name": "Abula with fish or meat",
+          "description": null,
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 20.00 }]
+        },
+        {
+          "ref": 33,
+          "name": "Ofe Nsela Fish/Goat",
+          "description": null,
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 20.00 }]
+        },
+        {
+          "ref": 34,
+          "name": "Bitter Leaf",
+          "description": null,
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 20.00 }]
+        },
+        {
+          "ref": 35,
+          "name": "Oha Soup",
+          "description": null,
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 20.00 }]
+        },
+        {
+          "ref": 36,
+          "name": "Ogbono Soup",
+          "description": null,
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 20.00 }]
+        },
+        {
+          "ref": 37,
+          "name": "Afang Soup",
+          "description": null,
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 20.00 }]
+        },
+        {
+          "ref": 38,
+          "name": "Edikang Ikong",
+          "description": null,
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 20.00 }]
+        },
+        {
+          "ref": 39,
+          "name": "Egusi",
+          "description": null,
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 20.00 }]
+        },
+        {
+          "ref": 40,
+          "name": "Okra (Igbo)",
+          "description": null,
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 20.00 }]
+        },
+        {
+          "ref": 41,
+          "name": "Efo Riro",
+          "description": null,
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 20.00 }]
+        },
+        {
+          "ref": 42,
+          "name": "Chef Special Okra",
+          "description": "Chopped okra, meat and fish",
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 25.00 }]
+        },
+        {
+          "ref": 43,
+          "name": "Sea Food Okra",
+          "description": "Chopped okra, prawns and fish",
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 30.00 }]
+        }
+      ]
+    },
+    {
+      "id": "alpha_finger_dips",
+      "name": "ALPHA FINGER DIPS",
+      "note": null,
+      "serving_options": null,
+      "price_labels": ["standard"],
+      "items": [
+        {
+          "ref": 44,
+          "name": "Fish with Plantain",
+          "description": null,
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 15.00 }]
+        },
+        {
+          "ref": 45,
+          "name": "Jerk Chicken with Chip or Fried Yam",
+          "description": null,
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 15.00 }]
+        }
+      ]
+    },
+    {
+      "id": "side_dishes",
+      "name": "SIDE DISHES",
+      "note": null,
+      "serving_options": null,
+      "price_labels": ["standard"],
+      "items": [
+        {
+          "ref": 46,
+          "name": "Fried Plantain",
+          "description": null,
+          "tags": ["vegetarian"],
+          "prices": [{ "label": "standard", "amount": 7.00 }]
+        },
+        {
+          "ref": 47,
+          "name": "Fried Yam",
+          "description": null,
+          "tags": ["vegetarian"],
+          "prices": [{ "label": "standard", "amount": 7.00 }]
+        },
+        {
+          "ref": 48,
+          "name": "Honey Beans",
+          "description": null,
+          "tags": ["vegetarian"],
+          "prices": [{ "label": "standard", "amount": 12.00 }]
+        },
+        {
+          "ref": 49,
+          "name": "Moi Moi",
+          "description": null,
+          "tags": ["vegetarian"],
+          "prices": [{ "label": "standard", "amount": 7.00 }]
+        },
+        {
+          "ref": 50,
+          "name": "Yam Pottage",
+          "description": null,
+          "tags": ["vegetarian"],
+          "prices": [{ "label": "standard", "amount": 10.00 }]
+        },
+        {
+          "ref": 51,
+          "name": "Yam Pottage with Beef",
+          "description": null,
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 15.00 }]
+        },
+        {
+          "ref": 52,
+          "name": "Jerk Chicken (1 pc, 1/4)",
+          "description": null,
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 8.00 }]
+        },
+        {
+          "ref": 53,
+          "name": "Fried Bream Fish (1 pc)",
+          "description": null,
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 10.00 }]
+        },
+        {
+          "ref": 54,
+          "name": "Boiled Yam (4 pcs)",
+          "description": null,
+          "tags": ["vegetarian"],
+          "prices": [{ "label": "standard", "amount": 7.00 }]
+        }
+      ]
+    },
+    {
+      "id": "salads",
+      "name": "SALADS",
+      "note": null,
+      "serving_options": null,
+      "price_labels": ["standard"],
+      "items": [
+        {
+          "ref": 55,
+          "name": "Coleslaw",
+          "description": null,
+          "tags": ["vegetarian"],
+          "prices": [{ "label": "standard", "amount": 5.00 }]
+        },
+        {
+          "ref": 56,
+          "name": "Mixed Salad",
+          "description": null,
+          "tags": ["vegetarian"],
+          "prices": [{ "label": "standard", "amount": 5.00 }]
+        }
+      ]
+    },
+    {
+      "id": "rice",
+      "name": "RICE",
+      "note": "Priced by protein add-on. 'Plain' is rice with no protein. Some items are available with all three options; Plain Boiled Rice is plain only.",
+      "serving_options": null,
+      "price_labels": ["2 Beef", "1 Chicken", "Plain"],
+      "items": [
+        {
+          "ref": 57,
+          "name": "Rice & Peas",
+          "description": null,
+          "tags": [],
+          "prices": [
+            { "label": "2 Beef", "amount": 15.00 },
+            { "label": "1 Chicken", "amount": 15.00 },
+            { "label": "Plain", "amount": 10.00 }
+          ]
+        },
+        {
+          "ref": 58,
+          "name": "Jollof Rice",
+          "description": null,
+          "tags": [],
+          "prices": [
+            { "label": "2 Beef", "amount": 15.00 },
+            { "label": "1 Chicken", "amount": 15.00 },
+            { "label": "Plain", "amount": 10.00 }
+          ]
+        },
+        {
+          "ref": 59,
+          "name": "Fried Rice",
+          "description": null,
+          "tags": [],
+          "prices": [
+            { "label": "2 Beef", "amount": 15.00 },
+            { "label": "1 Chicken", "amount": 15.00 },
+            { "label": "Plain", "amount": 10.00 }
+          ]
+        },
+        {
+          "ref": 60,
+          "name": "Plain Boiled Rice",
+          "description": null,
+          "tags": [],
+          "prices": [
+            { "label": "Plain", "amount": 8.00 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "extras",
+      "name": "EXTRAS",
+      "note": null,
+      "serving_options": null,
+      "price_labels": ["standard"],
+      "items": [
+        {
+          "ref": 61,
+          "name": "Assorted Meat (3 pcs)",
+          "description": null,
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 5.00 }]
+        },
+        {
+          "ref": 62,
+          "name": "Beef (3 pcs)",
+          "description": null,
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 5.00 }]
+        },
+        {
+          "ref": 63,
+          "name": "Plain Stew",
+          "description": null,
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 5.00 }]
+        },
+        {
+          "ref": 64,
+          "name": "Extra Pounded Yam",
+          "description": null,
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 5.00 }]
+        },
+        {
+          "ref": 65,
+          "name": "Extra Garri",
+          "description": null,
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 5.00 }]
+        },
+        {
+          "ref": 66,
+          "name": "Extra Amala",
+          "description": null,
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 5.00 }]
+        },
+        {
+          "ref": 67,
+          "name": "Extra Wheat",
+          "description": null,
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 5.00 }]
+        },
+        {
+          "ref": 68,
+          "name": "Stock Fish",
+          "description": null,
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 12.00 }]
+        }
+      ]
+    },
+    {
+      "id": "desserts",
+      "name": "DESSERTS",
+      "note": null,
+      "serving_options": null,
+      "price_labels": ["standard"],
+      "items": [
+        {
+          "ref": 69,
+          "name": "Puff Puff (6 pcs)",
+          "description": null,
+          "tags": [],
+          "prices": [{ "label": "standard", "amount": 5.00 }]
+        }
+      ]
+    },
+    {
+      "id": "champagne_sparkling",
+      "name": "CHAMPAGNE / SPARKLING",
+      "category": "drinks",
+      "note": null,
+      "serving_options": null,
+      "price_labels": ["bottle"],
+      "items": [
+        { "ref": null, "name": "Prosecco", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 40.00 }] },
+        { "ref": null, "name": "Prosecco Rose", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 50.00 }] },
+        { "ref": null, "name": "Martini Asti", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 50.00 }] },
+        { "ref": null, "name": "Moet Brut", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 120.00 }] },
+        { "ref": null, "name": "Moet Ice", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 140.00 }] },
+        { "ref": null, "name": "Moet Rose", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 140.00 }] },
+        { "ref": null, "name": "Luc Belaire Rose", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 100.00 }] },
+        { "ref": null, "name": "Luc Belaire Lux", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 120.00 }] },
+        { "ref": null, "name": "Veuve Clicquot", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 120.00 }] },
+        { "ref": null, "name": "Laurent Perrier Brut", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 100.00 }] },
+        { "ref": null, "name": "Bollinger Brut", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 120.00 }] },
+        { "ref": null, "name": "Laurent Perrier Rose", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 160.00 }] },
+        { "ref": null, "name": "Dom Perignon", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 450.00 }] },
+        { "ref": null, "name": "Veuve Clicquot Rich", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 160.00 }] }
+      ]
+    },
+    {
+      "id": "rose_wine",
+      "name": "ROSE WINE",
+      "category": "drinks",
+      "note": "Glass (175ml) available at £10.00 for any wine in this section.",
+      "serving_options": null,
+      "price_labels": ["bottle", "glass_175ml"],
+      "items": [
+        { "ref": null, "name": "Rose", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 40.00 }, { "label": "glass_175ml", "amount": 10.00 }] },
+        { "ref": null, "name": "Pinot Grigio Rose", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 35.00 }, { "label": "glass_175ml", "amount": 10.00 }] }
+      ]
+    },
+    {
+      "id": "white_wine",
+      "name": "WHITE WINE",
+      "category": "drinks",
+      "note": "Glass (175ml) available at £10.00 for any wine in this section.",
+      "serving_options": null,
+      "price_labels": ["bottle", "glass_175ml"],
+      "items": [
+        { "ref": null, "name": "House Wine", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 30.00 }, { "label": "glass_175ml", "amount": 10.00 }] },
+        { "ref": null, "name": "Pinot Grigio", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 30.00 }, { "label": "glass_175ml", "amount": 10.00 }] }
+      ]
+    },
+    {
+      "id": "red_wine",
+      "name": "RED WINE",
+      "category": "drinks",
+      "note": "Glass (175ml) available at £10.00 for any wine in this section.",
+      "serving_options": null,
+      "price_labels": ["bottle", "glass_175ml"],
+      "items": [
+        { "ref": null, "name": "House Red", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 30.00 }, { "label": "glass_175ml", "amount": 10.00 }] },
+        { "ref": null, "name": "Merlot", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 30.00 }, { "label": "glass_175ml", "amount": 10.00 }] },
+        { "ref": null, "name": "Cabernet Sauvignon", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 30.00 }, { "label": "glass_175ml", "amount": 10.00 }] }
+      ]
+    },
+    {
+      "id": "aperitifs",
+      "name": "APERITIFS",
+      "category": "drinks",
+      "note": "Source PDF lists Magnum with a single £10.00 price; column not specified.",
+      "serving_options": null,
+      "price_labels": ["bottle", "glass"],
+      "items": [
+        { "ref": null, "name": "Campari", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 70.00 }, { "label": "glass", "amount": 70.00 }] },
+        { "ref": null, "name": "Magnum", "description": null, "tags": [], "prices": [{ "label": "unspecified", "amount": 10.00 }] }
+      ]
+    },
+    {
+      "id": "mocktails",
+      "name": "MOCKTAILS",
+      "category": "drinks",
+      "note": null,
+      "serving_options": null,
+      "price_labels": ["standard"],
+      "items": [
+        { "ref": null, "name": "Virgin Colada", "description": null, "tags": ["non_alcoholic"], "prices": [{ "label": "standard", "amount": 10.00 }] },
+        { "ref": null, "name": "Virgin Mojito", "description": null, "tags": ["non_alcoholic"], "prices": [{ "label": "standard", "amount": 10.00 }] }
+      ]
+    },
+    {
+      "id": "cocktails",
+      "name": "COCKTAILS",
+      "category": "drinks",
+      "note": null,
+      "serving_options": null,
+      "price_labels": ["standard"],
+      "items": [
+        { "ref": null, "name": "Pina Colada", "description": null, "tags": [], "prices": [{ "label": "standard", "amount": 15.00 }] },
+        { "ref": null, "name": "Mojito", "description": null, "tags": [], "prices": [{ "label": "standard", "amount": 18.00 }] },
+        { "ref": null, "name": "Sex on the Beach", "description": null, "tags": [], "prices": [{ "label": "standard", "amount": 15.00 }] },
+        { "ref": null, "name": "Fruit Punch", "description": null, "tags": [], "prices": [{ "label": "standard", "amount": 15.00 }] }
+      ]
+    },
+    {
+      "id": "whisky",
+      "name": "WHISKY",
+      "category": "drinks",
+      "note": null,
+      "serving_options": null,
+      "price_labels": ["bottle", "shot"],
+      "items": [
+        { "ref": null, "name": "Glenfiddich 12yrs", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 110.00 }] },
+        { "ref": null, "name": "Glenfiddich 15yrs", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 150.00 }] },
+        { "ref": null, "name": "Glenfiddich 18yrs", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 180.00 }] },
+        { "ref": null, "name": "Glenfiddich 21yrs", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 400.00 }] },
+        { "ref": null, "name": "Glenfiddich 23yrs", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 500.00 }] },
+        { "ref": null, "name": "Glenfiddich 26yrs", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 850.00 }] },
+        { "ref": null, "name": "Jack Daniels", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 90.00 }, { "label": "shot", "amount": 7.00 }] },
+        { "ref": null, "name": "Jameson Irish", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 80.00 }, { "label": "shot", "amount": 7.00 }] },
+        { "ref": null, "name": "Glenmorangie", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 90.00 }, { "label": "shot", "amount": 7.00 }] }
+      ]
+    },
+    {
+      "id": "vodka_gin_rum",
+      "name": "VODKA / GIN / RUM",
+      "category": "drinks",
+      "note": "Mixer with Spirits (£3.00) listed at the top of this section as an add-on.",
+      "serving_options": null,
+      "price_labels": ["bottle", "shot"],
+      "items": [
+        { "ref": null, "name": "Bacardi", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 100.00 }, { "label": "shot", "amount": 7.00 }] },
+        { "ref": null, "name": "Captain Morgan", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 100.00 }, { "label": "shot", "amount": 7.00 }] },
+        { "ref": null, "name": "Gordon's Gin", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 100.00 }, { "label": "shot", "amount": 7.00 }] },
+        { "ref": null, "name": "Malibu", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 80.00 }, { "label": "shot", "amount": 7.00 }] },
+        { "ref": null, "name": "Wray and Nephew", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 100.00 }, { "label": "shot", "amount": 7.00 }] },
+        { "ref": null, "name": "Smirnoff Vodka", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 80.00 }, { "label": "shot", "amount": 7.00 }] },
+        { "ref": null, "name": "AU Vodka", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 100.00 }, { "label": "shot", "amount": 7.00 }] },
+        { "ref": null, "name": "AU Double Espresso", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 80.00 }] },
+        { "ref": null, "name": "Mixer with Spirits", "description": null, "tags": ["add_on"], "prices": [{ "label": "standard", "amount": 3.00 }] },
+        { "ref": null, "name": "Ciroc (Berry, Pineapple, Apple & Blue Original)", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 100.00 }] },
+        { "ref": null, "name": "Grey Goose Vodka", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 100.00 }] },
+        { "ref": null, "name": "Azul", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 450.00 }, { "label": "shot", "amount": 7.00 }] },
+        { "ref": null, "name": "Tequila Sierra", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 80.00 }] },
+        { "ref": null, "name": "Tequila 1800", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 120.00 }] },
+        { "ref": null, "name": "Casamigos Gold", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 160.00 }] },
+        { "ref": null, "name": "Casamigos White", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 130.00 }, { "label": "shot", "amount": 10.00 }] },
+        { "ref": null, "name": "Hendricks Gin", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 120.00 }] }
+      ]
+    },
+    {
+      "id": "brandy_cognac",
+      "name": "BRANDY / COGNAC",
+      "category": "drinks",
+      "note": null,
+      "serving_options": null,
+      "price_labels": ["bottle", "shot"],
+      "items": [
+        { "ref": null, "name": "Courvoisier", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 90.00 }, { "label": "shot", "amount": 7.00 }] },
+        { "ref": null, "name": "Martell VS", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 100.00 }, { "label": "shot", "amount": 7.00 }] },
+        { "ref": null, "name": "Remy Martin VSOP", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 120.00 }, { "label": "shot", "amount": 7.00 }] },
+        { "ref": null, "name": "Hennessy", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 120.00 }] },
+        { "ref": null, "name": "Hennessy VSOP", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 150.00 }] },
+        { "ref": null, "name": "Hennessy XO", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 400.00 }] }
+      ]
+    },
+    {
+      "id": "port_sherry",
+      "name": "PORT / SHERRY (50ml)",
+      "category": "drinks",
+      "note": "Ruby Port listed with a single £7.00 price (glass); no bottle price given in source.",
+      "serving_options": null,
+      "price_labels": ["bottle", "glass"],
+      "items": [
+        { "ref": null, "name": "Ruby Port", "description": null, "tags": [], "prices": [{ "label": "glass", "amount": 7.00 }] },
+        { "ref": null, "name": "Baileys Irish Cream", "description": null, "tags": [], "prices": [{ "label": "bottle", "amount": 80.00 }, { "label": "glass", "amount": 7.00 }] }
+      ]
+    },
+    {
+      "id": "beers",
+      "name": "BEERS",
+      "category": "drinks",
+      "note": null,
+      "serving_options": null,
+      "price_labels": ["standard"],
+      "items": [
+        { "ref": null, "name": "Guinness Small 330ml (Nigerian)", "description": null, "tags": [], "prices": [{ "label": "standard", "amount": 7.00 }] },
+        { "ref": null, "name": "Guinness Large 600ml (Nigerian)", "description": null, "tags": [], "prices": [{ "label": "standard", "amount": 10.00 }] },
+        { "ref": null, "name": "Star 568ml (Nigerian)", "description": null, "tags": [], "prices": [{ "label": "standard", "amount": 10.00 }] },
+        { "ref": null, "name": "Orijin", "description": null, "tags": [], "prices": [{ "label": "standard", "amount": 10.00 }] },
+        { "ref": null, "name": "Guilder 568ml", "description": null, "tags": [], "prices": [{ "label": "standard", "amount": 10.00 }] },
+        { "ref": null, "name": "Palm Wine (Nigerian)", "description": null, "tags": [], "prices": [{ "label": "standard", "amount": 10.00 }] },
+        { "ref": null, "name": "Trophy", "description": null, "tags": [], "prices": [{ "label": "standard", "amount": 10.00 }] },
+        { "ref": null, "name": "Heineken", "description": null, "tags": [], "prices": [{ "label": "standard", "amount": 10.00 }] },
+        { "ref": null, "name": "Smirnoff Ice", "description": null, "tags": [], "prices": [{ "label": "standard", "amount": 6.00 }] },
+        { "ref": null, "name": "Cider", "description": null, "tags": [], "prices": [{ "label": "standard", "amount": 5.00 }] }
+      ]
+    },
+    {
+      "id": "soft_drinks",
+      "name": "SOFT DRINKS",
+      "category": "drinks",
+      "note": "Juices (Apple/Orange/Pineapple/Mango/Cranberry) are sold by the glass at £5.00; a 1lt pack is listed separately.",
+      "serving_options": null,
+      "price_labels": ["standard"],
+      "items": [
+        { "ref": null, "name": "Mineral Water Still / Sparkling", "description": null, "tags": ["non_alcoholic"], "prices": [{ "label": "standard", "amount": 2.00 }] },
+        { "ref": null, "name": "Coke / Diet Coke / 7 UP", "description": null, "tags": ["non_alcoholic"], "prices": [{ "label": "standard", "amount": 3.00 }] },
+        { "ref": null, "name": "Juices (Apple/Orange/Pineapple/Mango/Cranberry)", "description": "Sold by the glass", "tags": ["non_alcoholic"], "prices": [{ "label": "glass", "amount": 5.00 }] },
+        { "ref": null, "name": "Red Bull", "description": null, "tags": ["non_alcoholic"], "prices": [{ "label": "standard", "amount": 5.00 }] },
+        { "ref": null, "name": "Nigerian Fanta", "description": null, "tags": ["non_alcoholic"], "prices": [{ "label": "standard", "amount": 3.00 }] },
+        { "ref": null, "name": "Nigerian Schweppes", "description": null, "tags": ["non_alcoholic"], "prices": [{ "label": "standard", "amount": 3.00 }] },
+        { "ref": null, "name": "Super Malt", "description": null, "tags": ["non_alcoholic"], "prices": [{ "label": "standard", "amount": 3.00 }] },
+        { "ref": null, "name": "Guinness Malta", "description": null, "tags": ["non_alcoholic"], "prices": [{ "label": "standard", "amount": 3.00 }] },
+        { "ref": null, "name": "Tonic Water", "description": null, "tags": ["non_alcoholic"], "prices": [{ "label": "standard", "amount": 2.00 }] },
+        { "ref": null, "name": "Juice (Pack 1lt)", "description": null, "tags": ["non_alcoholic"], "prices": [{ "label": "standard", "amount": 10.00 }] }
+      ]
+    }
+  ]
+}
