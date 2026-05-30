@@ -11,7 +11,7 @@ export function Visit() {
           </h3>
           <p className="visit-blurb">
             First Floor, 100&ndash;104 Lewisham High Street, London <strong>SE13 5JH</strong>.
-            Tuesday through Sunday, kitchen from 5pm until late.
+            Open seven days a week from 3pm until late.
           </p>
           <a
             className="visit-cta"
@@ -44,13 +44,13 @@ export function Visit() {
             <div>
               <dt>Hours</dt>
               <dd>
-                Tue&ndash;Thu&nbsp;&nbsp;5pm – 11pm
+                Mon&ndash;Wed&nbsp;&nbsp;3pm – 2am
                 <br />
-                Fri&ndash;Sat&nbsp;&nbsp;&nbsp;5pm – late
+                Thu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3pm – 4am
                 <br />
-                Sun&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1pm – 10pm
+                Fri&ndash;Sat&nbsp;&nbsp;&nbsp;3pm – 5am
                 <br />
-                Mon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Closed
+                Sun&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3pm – 3am
               </dd>
             </div>
           </dl>

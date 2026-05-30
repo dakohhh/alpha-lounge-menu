@@ -5,7 +5,7 @@ import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
-const MENU_URL = "https://alphaloungebar.vercel.app/";
+const MENU_URL = "https://menu.alphalounge.bar";
 const faviconPath = path.join(root, "public", "favicon.png");
 const outPath = path.join(root, "public", "menu-qr.png");
 

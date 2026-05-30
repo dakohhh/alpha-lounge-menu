@@ -29,7 +29,7 @@ export function Hero() {
           <Ornament />
         </div>
 
-        <div className="hero-meta hero-meta-bl">Open Tue&nbsp;–&nbsp;Sun · From 5pm</div>
+        <div className="hero-meta hero-meta-bl">Open daily · From 3pm</div>
         <div className="hero-meta hero-meta-br">+44 208 318 2222</div>
       </div>
 
